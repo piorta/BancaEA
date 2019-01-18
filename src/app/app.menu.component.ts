@@ -26,16 +26,15 @@ export class AppMenuComponent implements OnInit, AfterViewInit {
             // { label: 'DASHBOARD', icon: 'fa fa-fw fa-dashboard', routerLink: ['/']},
 
             { label: 'Posición Consolidada', icon: 'fa fa-fw fa-area-chart', routerLink: ['/'] },
-            { label: 'Movimientos', icon: 'fa fa-spinner',  routerLink: ['/movimientos'] },
+
 
             {
                 label: 'Transferencias', icon: 'fa fa-exchange',
                 items: [
-                    { label: 'Activacion', routerLink: ['/transfactiv'] },
                     { label: 'Transferencia Directa', routerLink: ['/transfdirecta'] },
                     { label: 'Transferencia Otros', routerLink: ['/transfotros'] },
                     { label: 'Historial', routerLink: ['/transfhistorial'] }
-                    
+
                 ]
 
             },
@@ -49,7 +48,8 @@ export class AppMenuComponent implements OnInit, AfterViewInit {
                 ]
 
 
-            }
+            },
+            { label: 'Movimientos', icon: 'fa fa-spinner', routerLink: ['/movimientos'] },
 
 
             //{ label: 'Posición Consolidada', icon: 'fa fa-fw fa-area-chart', routerLink: ['/posicion-consolidada']},
